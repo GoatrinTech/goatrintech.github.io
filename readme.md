@@ -1,1 +1,1 @@
-This is goatrin technologie's website.
+This is a fun website.
