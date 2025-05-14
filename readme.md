@@ -1,1 +1,2 @@
-This is a fun website.
+This site is currently under maintenance.
+Sorry.
