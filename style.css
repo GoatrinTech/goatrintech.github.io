@@ -1,0 +1,32 @@
+.body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.header {
+    background: #e3ffc2;
+    color: #13ff0b;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.button {
+    background-color: aqua;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    align-self: start;
+}
