@@ -3,7 +3,7 @@ const imageElement = document.getElementById('ldimage');
 
 function getRandomImage() {
     const randomIndex = Math.floor(Math.random() * images.length);
-    const randomImage = images[randomIndex];
+    randomImage = images[randomIndex];
     imageElement.src = randomImage;
 }
 
