@@ -36,3 +36,8 @@
     width: 50%;
     height: 50%;
 }
+
+.ldtext {
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
