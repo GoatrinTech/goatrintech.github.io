@@ -1,22 +1,45 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title>Goatrin</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta icon="favicon.ico">
-        <meta name="description" content="Goatrin">
-        <link rel="stylesheet" href="/style/style.css">
-        <script src = "wipScript.js"></script>
-    </head>
-    <body>
-        <div class = "body">
-            <h1>Sorry, but this site is a WIP</h1>
-            <p>
-                <img src = "" class = "ldimage" name = "canvas">
-            </p>
-            <div class = "ldtext">
-                "I ate it."
-            </div>
+<html lang="en">
+<head>
+    <title>Goatrin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <h1>Sorry, but this site is currently a WIP</h1>
+        <img class="ldimage" id="ldimage">
+        <p class = "ldtext" id = "ldtext">
+
+        </p>
+        <script>
+            var imagesArray = ["/images/ld.jpeg", "/images/b1.jpg", "/images/b2.jpg"];
+
+            function displayImage() {
+                var num = Math.floor(Math.random() * imagesArray.length); // 0...2
+                document.getElementById("ldimage").src = imagesArray[num];
+            }
+
+            // Call the function to display an image when the page loads
+            displayImage();
+
+            function detectImage() {
+            var img = document.getElementById("ldimage");
+            var textArray = ["I ate it.", "I chewed it.", "I chewed it again."];
+            var src = img.src;
+
+            if (src.endsWith("ld.jpeg")) {
+                document.getElementById("ldtext").innerHTML = textArray[0];
+            } else if (src.endsWith("b1.jpg")) {
+                document.getElementById("ldtext").innerHTML = textArray[1];
+            } else if (src.endsWith("b2.jpg")) {
+                document.getElementById("ldtext").innerHTML = textArray[2];
+            } else {
+        //document.getElementById("ldtext").innerHTML = "I don't know what I ate.";
+    }
+}
+
+            detectImage();
+            </script>
         </div>
     </body>
 </html>
